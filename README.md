@@ -2,6 +2,8 @@
 
 ArgoCD Notifier is a Kubernetes-based application that monitors ArgoCD applications for state changes and sends notifications to a specified Telegram chat. Notifications include details about new applications, updates to existing applications, and deletions.
 
+<img width="505" alt="Screenshot 2024-12-06 at 20 40 08" src="https://github.com/user-attachments/assets/c2063afe-7606-46df-96d2-25470e2f8922">
+
 ## Features
 
 - Monitors ArgoCD applications for:
