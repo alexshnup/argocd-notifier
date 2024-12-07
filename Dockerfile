@@ -8,6 +8,4 @@ COPY . .
 RUN mkdir /data
 VOLUME /data
 
-ENV CONFIG_PATH /app/config.yaml
-
 CMD ["python3", "notifier.py"]
