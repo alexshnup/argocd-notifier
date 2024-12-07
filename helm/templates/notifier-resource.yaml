@@ -1,0 +1,7 @@
+apiVersion: argocd-notifier.example.com/v1
+kind: Notifier
+metadata:
+  name: {{ .Release.Name }}-state
+  namespace: {{ .Release.Namespace }}
+spec:
+  state: {}

@@ -1,0 +1,8 @@
+apiVersion: v2
+name: argocd-notifier
+version: 0.1.0
+description: A Helm chart for deploying the ArgoCD Notifier
+dependencies:
+  - name: notifier-crd
+    version: 1.0.0
+    repository: file://crds

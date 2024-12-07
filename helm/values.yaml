@@ -1,0 +1,19 @@
+image:
+  repository: argocd-notifier
+  tag: latest
+  pullPolicy: IfNotPresent
+
+replicaCount: 1
+
+env:
+  NOTIFIER_RESOURCE_NAME: "argocd-notifier-state"
+  ARGOCD_SERVER: "https://argocd.example.com"
+  ARGOCD_TOKEN: ""
+  TELEGRAM_BOT_TOKEN: ""
+  TELEGRAM_CHAT_ID: ""
+
+resources: {}
+
+nodeSelector: {}
+tolerations: []
+affinity: {}
