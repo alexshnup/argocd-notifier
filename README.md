@@ -98,7 +98,7 @@ kubectl logs -n argocd pod/argocd-notifier-<pod-id>
    - Ensure the Telegram API is accessible from the cluster.
 
 3. **Missing Applications in Notifications:**
-   - Verify the ArgoCD server and token configuration in `values-argocd-notifier.yml`.
+   - Verify the ArgoCD server and token configuration in `values.yml`.
 
 ## Contributing
 Contributions are welcome! Feel free to submit issues or create pull requests.
