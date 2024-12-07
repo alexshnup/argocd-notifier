@@ -1,5 +1,5 @@
 image:
-  repository: argocd-notifier
+  repository: alexshnup/argocd-notifier
   tag: latest
   # pullPolicy: IfNotPresent
   pullPolicy: Always
