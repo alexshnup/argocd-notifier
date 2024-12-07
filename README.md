@@ -28,12 +28,12 @@ cd argocd-notifier
 
 ### Step 2: Deploy with Helm
 
-#### Create a `values-argocd-notifier.yml` file
+#### Create a `values.yml` file
 Customize the configuration:
 
 ```yaml
 image:
-  repository: your-docker-image
+  repository:  alexshnup/argocd-notifier
   tag: latest
   pullPolicy: IfNotPresent
 
@@ -50,7 +50,7 @@ resources: {}
 Run the following command:
 
 ```bash
-helm upgrade --install argocd-notifier ./helm --namespace argocd -f values-argocd-notifier.yml
+helm upgrade --install argocd-notifier ./helm --namespace argocd -f values.yml
 ```
 
 ## How It Works
