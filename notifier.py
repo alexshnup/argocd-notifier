@@ -103,7 +103,7 @@ def get_applications():
 
 # send message to telegram
 def send_telegram_message(message):
-    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message}
     response = requests.post(url, json=payload)
     if response.status_code == 200:
@@ -196,4 +196,5 @@ def monitor_applications():
 
 
 if __name__ == "__main__":
+    send_telegram_message("Start")
     monitor_applications()

@@ -1,7 +1,8 @@
 image:
   repository: argocd-notifier
   tag: latest
-  pullPolicy: IfNotPresent
+  # pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 replicaCount: 1
 
